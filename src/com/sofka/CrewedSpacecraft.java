@@ -4,7 +4,8 @@ public class CrewedSpacecraft extends Spacecraft{
     private int crewCapacity;
 
     public CrewedSpacecraft(String name, int power, int crewCapacity) {
-        super(name, power);
+        this.name = name;
+        this.power = power;
         this.crewCapacity = crewCapacity;
     }
 

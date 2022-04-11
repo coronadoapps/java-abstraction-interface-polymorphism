@@ -4,7 +4,8 @@ public class UncrewedSpacecraft extends Spacecraft{
     private String autonomy; //remote controlled, remote guided or autonomous
 
     public UncrewedSpacecraft(String name, int power, String autonomy) {
-        super(name, power);
+        this.name = name;
+        this.power = power;
         this.autonomy = autonomy;
     }
 

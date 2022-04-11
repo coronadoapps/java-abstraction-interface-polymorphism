@@ -52,7 +52,7 @@ public class Main {
                 aux = input.nextLine();
                 System.out.println("Enter spacecraft power(HP): ");
                 powerA = input.nextInt();
-                Spacecraft spacecraft = new Spacecraft(aux, powerA);
+                Spacecraft spacecraft = new Shuttle(aux, powerA, 0, 0);
                 System.out.println("New spacecraft name: " + spacecraft.getName() + " power: " + spacecraft.getPower() + " HP");
                 return true;
 

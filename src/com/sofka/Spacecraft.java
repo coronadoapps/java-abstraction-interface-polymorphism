@@ -1,8 +1,8 @@
 package com.sofka;
 
-public class Spacecraft {
-    private String name;
-    private final int power;
+public abstract class Spacecraft {
+    protected String name;
+    protected int power;
     private int velocity;
     private boolean start;
 
@@ -14,12 +14,6 @@ public class Spacecraft {
         this.name = name;
     }
 
-    public Spacecraft(String name, int power){
-        this.name = name;
-        this.power = power;
-        this.start = true;
-    }
-
     public boolean isStart(){
         return this.start;
     }
@@ -28,10 +22,7 @@ public class Spacecraft {
         this.start = start;
     }
 
-    public void landing(){
-        this.velocity = 0;
-        this.start = false;
-    }
+    public abstract void landing();
 
     public int getPower(){
         return this.power;

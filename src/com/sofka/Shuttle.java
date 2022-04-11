@@ -5,7 +5,8 @@ public class Shuttle extends Spacecraft{
     private int maxCapacity;
 
     public Shuttle(String name, int power,int weight, int maxCapacity) {
-        super(name, power);
+        this.name = name;
+        this.power = power;
         this.weight = weight;
         this.maxCapacity = maxCapacity;
     }
